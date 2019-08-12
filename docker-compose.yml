@@ -1,0 +1,20 @@
+version: '3'
+services:
+  nlp-ner:
+    build:
+      dockerfile: Dockerfile
+      context: ./nlp-ner
+    ports:
+      - "8080:5000"
+
+    volumes:
+      - .:/app/spacy/main.py
+
+  nlp-coref:
+    build:
+      dockerfile: Dockerfile
+      context: ./nlp-coref
+    ports:
+      - "8085:8000"
+    volumes:
+      - .:/app/spacy/server.py
