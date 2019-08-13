@@ -35,8 +35,9 @@ Amazon ORG
 
 ### Named Entities in SpaCy
 The SpaCy Named Entity Recognition model trained on the `OntoNotes 5` corpus supports the following entity types:
+
 | Type         |  Description
-|-----------|--|-------------------------------------------------------                      
+|--------------|----------------------------------------------------                      
 |`PERSON`      |People, including fictional.
 |`NORP`	   |Nationalities or religious or political groups.
 |`FAC`	   |Buildings, airports, highways, bridges, etc.
