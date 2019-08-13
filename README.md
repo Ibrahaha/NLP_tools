@@ -1,5 +1,5 @@
 # NLP_tools
-A container that includes state-of-the-art tools in NLP for Named Entity Recognition (SpaCy, Stanfordcorenlp, nltk ,Allennlp) and Coreference Resolution (neuralcoref). You can use NER and Coreference resolution both as servers or from containers' bash.
+A container that includes state-of-the-art tools in NLP for Named Entity Recognition (SpaCy, Stanfordcorenlp, nltk ,Allennlp) and Coreference Resolution (neuralcoref). You can use NER and Coreference Resolution models both as servers or from containers' bash.
 
 - **Operating system**: Linux · Windows · macOS / OS X
 - **Package managers**: [Docker] [docker-compose]
