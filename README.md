@@ -5,7 +5,7 @@ A container that includes state-of-the-art tools in NLP for Named Entity Recogni
 - **Package managers**: [Docker] [docker-compose]
 - **Docker image version**: Python:3.6
 
-## Build Named Entity Recognition container
+## Build and Run Named Entity Recognition container
 First, you need to be in the nlp-ner folder with your bash.
 ```bash
 cd ./nlp-tools/nlp-ner
@@ -16,4 +16,4 @@ Once your container is build, you can run it.
 ```bash
 docker run -it isouleymane/nlp-ner sh
 ```
-When your container is ready, you directly have access to its bash. You can run `ls -al` command to display its containt.
+When your container is ready, you directly have access to its bash. You can run `ls` command to display its containt.
