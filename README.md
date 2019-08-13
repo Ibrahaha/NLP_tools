@@ -14,5 +14,6 @@ chmod +x build.sh
 ```
 Once your container is build, you can run it.
 ```bash
-docker run -it -p 8080:5000 isouleymane/nlp-ner sh
+docker run -it isouleymane/nlp-ner sh
 ```
+When your container is ready, you directly have access to its bash. You can run `ls -al` command to display its containt.
