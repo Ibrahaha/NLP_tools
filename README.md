@@ -74,7 +74,7 @@ To load neuralcoref, we need to set up a pipe of an English SpaCy model as for N
 # python
 
 >>> import spacy   # Load your usual SpaCy model (one of SpaCy English models)
->>> nlp = spacy.load('en')
+>>> nlp = spacy.load('en_core_web_lg')
 
 
 >>> import neuralcoref # Add neural coref to SpaCy's pipe
