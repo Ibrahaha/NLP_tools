@@ -34,7 +34,7 @@ Amazon ORG
 ```
 
 ### Named Entities in SpaCy
-The SpaCy Named Entity Recognition model trained on the `OntoNotes 5` corpus supports the following entity types:
+The SpaCy Named Entity Recognition model trained on the [OntoNotes 5](https://catalog.ldc.upenn.edu/LDC2013T19) corpus supports the following entity types:
 
 | Type         |  Description
 |--------------|----------------------------------------------------                      
