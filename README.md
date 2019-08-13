@@ -86,6 +86,9 @@ To load neuralcoref, we need to set up a pipe of an English SpaCy model as for N
 True
 >>> doc._.coref_clusters
 [My sister: [My sister, She], a dog: [a dog, him]]
+>>> doc._.coref_scores
+{My sister: {My sister: 1.3110305070877075}, a dog: {a dog: 1.804752230644226, My sister: -1.6715972423553467}, She: {She: -0.10834205150604248, My sister: 8.058426856994629, a dog: -1.0625176429748535}, him: {him: -1.870743989944458, My sister: 3.1147186756134033, a dog: 4.356405258178711, She: -3.1379528045654297}}
+
 ```
 ### Using NeuralCoref
 
