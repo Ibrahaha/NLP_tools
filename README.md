@@ -60,3 +60,31 @@ To load neuralcoref, we need to set up a pipe of an English SpaCy model as for N
 doc._.has_coref
 doc._.coref_clusters
 ```
+### Using NeuralCoref
+
+NeuralCoref will resolve the coreferences and annotate them as [extension attributes](https://spacy.io/usage/processing-pipelines#custom-components-extensions) in the spaCy `Doc`,  `Span` and `Token` objects under the `._.` dictionary.
+
+Here is the list of the annotations:
+
+|  Attribute                |  Type              |  Description
+|---------------------------|--------------------|-----------------------------------------------------
+|`doc._.has_coref`          |boolean             |Has any coreference has been resolved in the Doc
+|`doc._.coref_clusters`     |list of `Cluster`   |All the clusters of corefering mentions in the doc
+|`doc._.coref_resolved`     |unicode             |Unicode representation of the doc where each corefering mention is replaced by the main mention in the associated cluster.
+|`doc._.coref_scores`       |Dict of Dict        |Scores of the coreference resolution between mentions.
+|`span._.is_coref`          |boolean             |Whether the span has at least one corefering mention
+|`span._.coref_cluster`     |`Cluster`           |Cluster of mentions that corefer with the span
+|`span._.coref_scores`      |Dict                |Scores of the coreference resolution of & span with other mentions (if applicable).
+|`token._.in_coref`         |boolean             |Whether the token is inside at least one corefering mention
+|`token._.coref_clusters`   |list of `Cluster`   |All the clusters of corefering mentions that contains the token
+
+A `Cluster` is a cluster of coreferring mentions which has 3 attributes and a few methods to simplify the navigation inside a cluster:
+
+|  Attribute or method   |  Type / Return type |  Description
+|------------------------|---------------------|-----------------------------------------------------
+|`i`                     |int                  |Index of the cluster in the Doc
+|`main`                  |`Span`               |Span of the most representative mention in the cluster
+|`mentions`              |list of `Span`       |List of all the mentions in the cluster
+|`__getitem__`           |return `Span`        |Access a mention in the cluster
+|`__iter__`              |yields `Span`        |Iterate over mentions in the cluster
+|`__len__`               |return int           |Number of mentions in the cluster
