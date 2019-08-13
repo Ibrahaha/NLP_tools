@@ -1,1 +1,1 @@
-sudo docker build -t isouleymane/nlp-ner:latest .
+docker build -t isouleymane/nlp-ner:latest .
