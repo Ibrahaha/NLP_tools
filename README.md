@@ -82,8 +82,8 @@ To load neuralcoref, we need to set up a pipe of an English SpaCy model as for N
 
 >>> doc = nlp(u'My sister has a dog. She loves him.') # You're done. You can now use NeuralCoref as you usually manipulate                      a SpaCy document annotations.
 
-doc._.has_coref
-doc._.coref_clusters
+>>> doc._.has_coref
+>>> doc._.coref_clusters
 ```
 ### Using NeuralCoref
 
