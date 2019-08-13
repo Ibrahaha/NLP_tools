@@ -1,1 +1,1 @@
-sudo docker build -t isouleymane/nlp-coref:latest .
+docker build -t isouleymane/nlp-coref:latest .
