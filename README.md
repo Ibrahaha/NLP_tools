@@ -14,7 +14,7 @@ chmod +x build.sh
 ```
 Once your container is build, you can run it.
 ```bash
-docker run -it isouleymane/nlp-ner sh
+sudo docker run -it isouleymane/nlp-ner sh
 ```
 When your container is ready, you directly have access to its bash. You can use `SpaCy`, `nltk`, `stanfordnlp` or `allennlp` to solve natural language processing tasks. For example, we can use `SpaCy` pre-trained language model `en_core_web_sm` for NER. 
 ```bash
@@ -70,7 +70,7 @@ chmod +x build.sh
 ```
 Once your container is build, you can run it.
 ```bash
-docker run -it isouleymane/nlp-coref sh
+sudo docker run -it isouleymane/nlp-coref sh
 ```
 ### Adding NeuralCoref to the pipe of an English SpaCy Language
 To load neuralcoref, we need to set up a pipe of an English SpaCy model as for NER task in SpaCy.
