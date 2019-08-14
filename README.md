@@ -56,6 +56,7 @@ The SpaCy Named Entity Recognition model trained on the [OntoNotes 5](https://ca
 |`QUANTITY`	   |Measurements, as of weight or distance.
 |`ORDINAL`	   |“first”, “second”, etc.
 |`CARDINAL`	   |Numerals that do not fall under another type.
+
 If you want to have more information about an entity, you can run following command:
 ```bash
 >>> spacy.load("initials of entity") #for example : spacy.explain("ORG") for ORG entity
