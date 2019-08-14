@@ -133,6 +133,6 @@ chmod +x build.sh
 ```
 Once, containers are ready, you can query the `neuralcoref` REST API like this :
 ```bash
-curl --data-urlencode "text=My sister has a dog. She loves him." -G localhost:8000
+curl --data-urlencode "text=My sister has a dog. She loves him." -G localhost:8085
 ```
  
