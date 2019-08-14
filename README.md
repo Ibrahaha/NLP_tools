@@ -118,3 +118,18 @@ A `Cluster` is a cluster of coreferring mentions which has 3 attributes and a fe
 |`__getitem__`           |return `Span`        |Access a mention in the cluster
 |`__iter__`              |yields `Span`        |Iterate over mentions in the cluster
 |`__len__`               |return int           |Number of mentions in the cluster
+
+## Using NER and Coreference Resolution containers as servers
+Be sure that ports 8080 and 8085 are free on your computer (if not change change them in [docker-compose.yml]
+ (https://github.com/Ibrahaha/NLP_tools/blob/master/docker-compose.yml).
+ To build and to run your images with servers, you need to execute following command :
+ ```bash
+cd ./nlp-tools/build_as_servers
+chmod +x build.sh
+./build.sh
+```
+Once, containers are ready, you can query the `neuralcoref` REST API like this :
+```bash
+curl --data-urlencode "text=My sister has a dog. She loves him." -G localhost:8000
+```
+ 
