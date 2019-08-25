@@ -12,7 +12,7 @@ cd ./nlp-tools/nlp-ner
 chmod +x build.sh
 ./build.sh
 ```
-Once your container is build, you can run it.
+Once your container is built, you can run it.
 ```bash
 sudo docker run -it isouleymane/nlp-ner sh
 ```
