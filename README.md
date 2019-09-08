@@ -14,7 +14,11 @@ If you are interested in going further in the subject and understanding the proc
 * [A Dynamic Oracle for Arc-Eager Dependency Parsing](https://www.aclweb.org/anthology/C12-1059)
 
 ### Coreference Resolution
-https://www.aclweb.org/anthology/Q16-1026
+* [End-to-end Neural Coreference Resolution](https://arxiv.org/abs/1707.07045)
+* [Higher-order Coreference Resolution with Coarse-to-fine Inference](https://arxiv.org/abs/1804.05392)
+* [Deep Reinforcement Learning for Mention-Ranking Coreference Models](https://arxiv.org/abs/1609.08667)
+* [Improving Coreference Resolution by Learning Entity-Level Distributed Representations](https://arxiv.org/abs/1606.01323)
+* [A Hierarchical Multi-task Approach for Learning Embeddings from Semantic Tasks](https://arxiv.org/abs/1811.06031)
 ## Build and Run Named Entity Recognition container
 First, you need to be in the nlp-ner folder with your bash.
 ```bash
