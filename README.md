@@ -4,7 +4,17 @@ A container that includes state-of-the-art tools in NLP for Named Entity Recogni
 - **Operating system**: Linux · Windows · macOS / OS X
 - **Package managers**: [Docker] [docker-compose]
 - **Docker image version**: Python:3.6
+## Models Architecture
+If you are interested in going further in the subject and understanding the processes and architectures behind Named Entity Recognition and Coreference Resolution libraries and fralmeworks, I strongly invite you to read the following research papers:
+### Named Entity Recognition
+* [Named Entity Recognition with Bidirectional LSTM-CNNs](https://www.aclweb.org/anthology/Q16-1026)
+* [Deep contextualized word representations](https://arxiv.org/abs/1802.05365)
+* [Neural Architectures for Named Entity Recognition](https://arxiv.org/abs/1603.01360)
+* [Simple and Accurate Dependency Parsing Using Bidirectional LSTM Feature Representations](https://arxiv.org/abs/1603.04351)
+* [A Dynamic Oracle for Arc-Eager Dependency Parsing](https://www.aclweb.org/anthology/C12-1059)
 
+### Coreference Resolution
+https://www.aclweb.org/anthology/Q16-1026
 ## Build and Run Named Entity Recognition container
 First, you need to be in the nlp-ner folder with your bash.
 ```bash
