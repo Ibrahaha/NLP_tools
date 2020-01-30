@@ -5,7 +5,7 @@ A container that includes state-of-the-art tools in NLP (Natural Language Proces
 - **Package managers**: [Docker] [docker-compose]
 - **Docker image version**: Python:3.6
 ## Models Architecture
-If you are interested in going further in the subject and understanding the processes and architectures behind Named Entity Recognition and Coreference Resolution libraries and fralmeworks, I strongly invite you to read the following research papers:
+If you are interested in going further in the subject and understanding the processes and architectures behind Named Entity Recognition and Coreference Resolution libraries and frameworks, I strongly invite you to read the following research papers:
 ### Named Entity Recognition
 * [Named Entity Recognition with Bidirectional LSTM-CNNs](https://www.aclweb.org/anthology/Q16-1026)
 * [Deep contextualized word representations](https://arxiv.org/abs/1802.05365)
@@ -83,7 +83,7 @@ cd ./nlp-tools/nlp-coref
 chmod +x build.sh
 ./build.sh
 ```
-Once your container is build, you can run it.
+Once your container is built, you can run it.
 ```bash
 sudo docker run -it isouleymane/nlp-coref sh
 ```
